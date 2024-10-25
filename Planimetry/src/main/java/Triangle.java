@@ -1,5 +1,3 @@
-package Planimetry;
-
 public class Triangle extends PlanarShape implements Shape {
     private final double a;
     private final double b;

@@ -1,5 +1,3 @@
-package Planimetry;
-
 public class Square extends Rectangle implements Shape {
 
     public Square(double a) {

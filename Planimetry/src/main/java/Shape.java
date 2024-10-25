@@ -1,5 +1,3 @@
-package Planimetry;
-
 public interface Shape {
     double area();
 

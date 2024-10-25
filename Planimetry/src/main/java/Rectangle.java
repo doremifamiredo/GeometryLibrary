@@ -1,5 +1,3 @@
-package Planimetry;
-
 public class Rectangle extends PlanarShape implements Shape  {
     protected final double a;
     private final double b;

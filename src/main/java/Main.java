@@ -1,9 +1,6 @@
-import Planimetry.Circle;
-import Planimetry.Square;
-import Planimetry.Triangle;
+package main.java;
 
 public class Main {
     public static void main(String[] args) {
-
     }
 }

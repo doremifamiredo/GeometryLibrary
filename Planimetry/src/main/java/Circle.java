@@ -1,5 +1,3 @@
-package Planimetry;
-
 public class Circle extends PlanarShape implements Shape {
     private final double r;
 
