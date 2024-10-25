@@ -1,9 +1,10 @@
 package Planimetry;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class PlanarShape implements Shape {
+public abstract class PlanarShape implements Shape, Comparable<PlanarShape> {
 
     public void printInfo() {
         this.introduce();
@@ -17,5 +18,19 @@ public abstract class PlanarShape implements Shape {
         geometryInfo.put("Площадь", this.area());
         geometryInfo.put("Периметр", this.perimeter());
         return geometryInfo;
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if (this == obj) return true;
+        if (obj == null) return false;
+        return compareTo((PlanarShape)obj) == 0;
+    }
+
+    @Override
+    public int compareTo(PlanarShape shape) {
+        return Comparator.comparing(PlanarShape::area)
+                .thenComparing(PlanarShape::perimeter)
+                .compare(this, shape);
     }
 }
