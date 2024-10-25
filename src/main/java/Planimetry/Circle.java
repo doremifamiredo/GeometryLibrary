@@ -1,7 +1,5 @@
 package Planimetry;
 
-import java.text.DecimalFormat;
-
 public class Circle extends PlanarShape implements Shape {
     private final double r;
 
